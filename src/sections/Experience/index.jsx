@@ -26,7 +26,7 @@ const Experience = () => {
             }, index) => (
                     <div
                         key={`${SECTION_ID}-${index}-${title.replaceAll(" ", "")}`}
-                        className={`grid grid-cols-[25%_75%] rounded-md px-2 py-6 transition-all ${isMouseEnter [`${SECTION_ID}-${index}`] ? "bg-gray-200":""}`}
+                        className={`grid grid-cols-[25%_75%] hover:scale-105 rounded-md px-2 py-6 transition-all ${isMouseEnter [`${SECTION_ID}-${index}`] ? "bg-gray-200":""}`}
                         onMouseEnter={() => setIsMouseEnter({[`${SECTION_ID}-${index}`]: true})}
                         onMouseLeave={() => setIsMouseEnter({[`${SECTION_ID}-${index}`]:false})}
                     >
